@@ -1,0 +1,3 @@
+#!/user/bin/perl
+use utf8;
+print "hello\nthere"
