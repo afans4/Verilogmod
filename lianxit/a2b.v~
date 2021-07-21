@@ -1,0 +1,9 @@
+module a2b(
+    input clka,
+    input clkb,
+    input pulse_a,
+    output pulse_b,
+    input rstn
+);
+
+endmodule

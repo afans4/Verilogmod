@@ -7,47 +7,114 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dE:/WHZ_code/FPGA/lianxit
-vtb_vend_machine
-DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z0 dD:/mygithup/verilogmod/lianxit
+va2b
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 31
 !i10b 1
-!s100 VFgFa5nIm<eUo>b^T]f1;1
-I^2J<o8<Z7@jY3A6_7[7_b3
-!s105 tb_vend_machine_sv_unit
-S1
+!s100 cFS?AKW;M_MPf<CFnQIiE0
+I`QkCHniK`Go@jbH9<Yem43
 R0
-w1625103973
-8tb_vend_machine.sv
-Ftb_vend_machine.sv
-L0 4
+w1626166881
+8a2b.v
+Fa2b.v
+L0 1
 Z2 OL;L;10.6c;65
-!s108 1625103987.000000
-!s107 tb_vend_machine.sv|
-!s90 tb_vend_machine.sv|
+Z3 !s108 1626229639.000000
+Z4 !s107 tb_a2b.sv|a2b.v|
+Z5 !s90 a2b.v|tb_a2b.sv|
 !i113 0
-Z3 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z4 tCvgOpt 0
-vvend_machine
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vseq10010
 R1
 r1
 !s85 0
 31
 !i10b 1
-!s100 ^WzMMG=;Cc`1]_iSADR=l3
-IR?nnmNh;<ZhGicF8F>o1W1
+!s100 K9[85V60[PlSD0eCDZI272
+Iz8cUohlW_?90Zm3zUWl8]3
 R0
-w1625104640
-8vend_machine.v
-Fvend_machine.v
+w1626355796
+8seq10010.v
+Fseq10010.v
 L0 1
 R2
-!s108 1625104663.000000
-!s107 vend_machine.v|
-!s90 vend_machine.v|
+Z8 !s108 1626355808.000000
+Z9 !s107 tb_seq10010.sv|seq10010.v|
+Z10 !s90 seq10010.v|tb_seq10010.sv|
 !i113 0
+R6
+R7
+vtb_a2b
+Z11 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 CMEHKRGHV=z0Ab5ci3k1O0
+I_zV;=K=^C3h9AZUn@CWOU0
+!s105 tb_a2b_sv_unit
+S1
+R0
+w1626229442
+8tb_a2b.sv
+Ftb_a2b.sv
+L0 2
+R2
 R3
 R4
+R5
+!i113 0
+R6
+R7
+vtb_seq10010
+R11
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 UO@e8_W@51F^EENUj9i1G0
+Ia>f0iT7f`FeX;g_J`oXm]2
+Z12 !s105 tb_seq10010_sv_unit
+S1
+R0
+w1626355586
+Z13 8tb_seq10010.sv
+Z14 Ftb_seq10010.sv
+L0 2
+R2
+R8
+R9
+R10
+!i113 0
+R6
+R7
+vtb_seq10110
+R11
+!s110 1626355527
+!i10b 1
+!s100 O0S<@hBngnNm>;n]XKF9X0
+Iem`E41gi><U6Q:Xk?IOJ?0
+R1
+R12
+S1
+R0
+w1626355503
+R13
+R14
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1626355527.000000
+R9
+R10
+!i113 0
+R6
+R7

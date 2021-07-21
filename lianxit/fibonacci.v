@@ -15,20 +15,20 @@ module fibonacci (
     reg [3:0] state,nstate;
     always @(posedge clk ) begin
         if (reset) begin
-            state <= IDLE;
+            state  <= IDLE;
             nstate <= IDLE;
         end else begin
-            state <= nstate;
+            state  <= nstate;
         end
     end
     wire cal_end ;
     always @( *) begin
         case (state)
-            IDLE: nstate = (start) ? LOAD : IDLE;
-            LOAD: nstate = (nth == 1) ? OUT : CAL;
-            CAL:  nstate = (cal_end) ? OUT : CAL;
-            OUT: nstate = (start) ? LOAD :OUT;
-            default : nstate = state;
+            IDLE    : nstate  = (start)    ? LOAD : IDLE;
+            LOAD    : nstate  = (nth == 1) ? OUT : CAL;
+            CAL     : nstate  = (cal_end)  ? OUT : CAL;
+            OUT     : nstate  = (start)    ? LOAD :OUT;
+            default : nstate  = state;
         endcase
     end
     

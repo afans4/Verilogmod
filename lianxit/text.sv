@@ -1,31 +1,45 @@
 `timescale 1ps/1ps
 //  Module: text
-//
-module text;
-    typedef struct{
-        bit [7:0] opcode;
-        bit [23:0] addr;
-    } instr_s;
-    typedef union {
-        bit [7:0] data;
-        bit [15:0] f_data;
-    } sta_u;
 
+class myclass;
+    rand bit [7:0] data[$];
+    string name;
+    
+    constraint c {
+        /*  solve order constraints  */
+        data.size() inside {[20:30]};
+        /*  rand variable constraints  */
+        
+    }
+    
+    function new(string name);
+        this.name = name;
+    endfunction
+
+    function void print();
+        foreach (data[i]) begin
+            $display("data[%0d] = %0d",i,data);
+        end
+    endfunction
+endclass
+
+module text;
+    
     initial begin
-        instr_s isf ;
-        isf.opcode= 8'ha8;
-        isf.addr = 24'h3afaf1;
-        sta_u re;
-        re.f_data = 'hcabf;
+        myclass tr;
+        bit [7:0] a[$];
+        bit [7:0] b[$];
+        bit [7:0] min,secmin;
+        tr = new("tr1");
+        randtr: assert (tr.randomize())
+            else $error("Assertion label failed!");
+        tr.print();
         #10
-        $display("[%t]union display:",$time);
-        $display("int_data = %0h",re.data);
-        $display("real_data = %h",re.f_data);
-        #10
-        $display("[%t]struct display:",$realtime);
-        $display("opcodea = %0h",isf.opcodea);
-        $display("addr = %0h",isf.addr);
-        $finish();
+        a = tr.data;
+        min = a.min();
+        b = a.delect()
+
+        $stop();
     end
     
 endmodule: text
