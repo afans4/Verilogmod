@@ -1,3 +1,6 @@
+# vsim -c -novopt -do "run -all;exit" work.text 
+# Start time: 13:03:52 on Aug 22,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # //  Questa Sim-64
 # //  Version 10.6c win64 Jul 26 2017
 # //
@@ -12,22 +15,17 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# vsim -novopt work.tb_seq10010 
-# Start time: 21:30:22 on Jul 15,2021
-# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
-# Refreshing D:/mygithup/verilogmod/lianxit/work.tb_seq10010
+# Refreshing D:/mygithup/verilogmod/lianxit/work.text
+# Refreshing D:/mygithup/verilogmod/lianxit/work.text_sv_unit
 # Loading sv_std.std
-# Loading work.tb_seq10010
-# Refreshing D:/mygithup/verilogmod/lianxit/work.seq10010
-# Loading work.seq10010
-add wave -position end sim:/tb_seq10010/dut/*
-run
-run
-run
-run
-run
-# ** Note: $stop    : tb_seq10010.sv(32)
-#    Time: 410 ps  Iteration: 1  Instance: /tb_seq10010
-# Break in Module tb_seq10010 at tb_seq10010.sv line 32
-# End time: 21:30:38 on Jul 15,2021, Elapsed time: 0:00:16
+# Loading work.text_sv_unit
+# Loading work.text
+# run -all
+# name value is A
+# name value is A
+# name value is B
+# name value is B
+# ** Note: $finish    : text.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /text
+# End time: 13:03:53 on Aug 22,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1

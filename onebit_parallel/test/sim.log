@@ -1,0 +1,56 @@
+# vsim -l sim.log -voptargs="+acc" -t ns -do "run -all;exit" -novopt -c -sv_lib D:/modeltech64_10.4/uvm-1.2/win64/uvm_dpi "+UVM_TESTNAME=my_case0" -L work work.top_tb 
+# Start time: 20:48:35 on Aug 21,2021
+# Loading C:/Users/afans/AppData/Local/Temp\afans@DESKTOP-UIN9PDH_dpi_189796\win64_gcc-4.5.0\export_tramp.dll
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim-64
+# //  Version 10.6c win64 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Refreshing D:/mygithup/verilogmod/onebit_parallel/test/work.top_tb
+# Refreshing D:/mygithup/verilogmod/onebit_parallel/test/work.top_tb_sv_unit
+# Refreshing D:/mygithup/verilogmod/onebit_parallel/test/work.uvm_pkg
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_tb_sv_unit
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.top_tb
+# Refreshing D:/mygithup/verilogmod/onebit_parallel/test/work.dut_if
+# Loading work.dut_if
+# Refreshing D:/mygithup/verilogmod/onebit_parallel/test/work.my_dut
+# Loading work.my_dut
+# Refreshing D:/mygithup/verilogmod/onebit_parallel/test/work.mf_1bit_512order_Re
+# Loading work.mf_1bit_512order_Re
+# Refreshing D:/mygithup/verilogmod/onebit_parallel/test/work.mf_1bit_512order_Im
+# Loading work.mf_1bit_512order_Im
+# Refreshing D:/mygithup/verilogmod/onebit_parallel/test/work.mf_table_2
+# Loading work.mf_table_2
+# ** Error: (vsim-3043) Unresolved reference to 'get_sequence_id'.
+#    Time: 0 ns  Iteration: 0  Region: /uvm_pkg::uvm_sequencer_param_base #(top_tb_sv_unit::transaction_i, top_tb_sv_unit::transaction_i) File: D:/modeltech64_10.4/verilog_src/uvm-1.2/src/seq/uvm_sequencer_param_base.svh Line: 342
+# ** Error: (vsim-3043) Unresolved reference to 'set_sequence_id'.
+#    Time: 0 ns  Iteration: 0  Region: /uvm_pkg::uvm_sequencer_param_base #(top_tb_sv_unit::transaction_i, top_tb_sv_unit::transaction_i) File: D:/modeltech64_10.4/verilog_src/uvm-1.2/src/seq/uvm_sequencer_param_base.svh Line: 295
+# ** Error: (vsim-3043) Unresolved reference to 'set_transaction_id'.
+#    Time: 0 ns  Iteration: 0  Region: /uvm_pkg::uvm_sequencer_param_base #(top_tb_sv_unit::transaction_i, top_tb_sv_unit::transaction_i) File: D:/modeltech64_10.4/verilog_src/uvm-1.2/src/seq/uvm_sequencer_param_base.svh Line: 288
+# ** Error: (vsim-3043) Unresolved reference to 'get_transaction_id'.
+#    Time: 0 ns  Iteration: 0  Region: /uvm_pkg::uvm_sequencer_param_base #(top_tb_sv_unit::transaction_i, top_tb_sv_unit::transaction_i) File: D:/modeltech64_10.4/verilog_src/uvm-1.2/src/seq/uvm_sequencer_param_base.svh Line: 287
+# ** Error: (vsim-3043) Unresolved reference to 'get_transaction_id'.
+#    Time: 0 ns  Iteration: 0  Region: /uvm_pkg::uvm_sequencer #(top_tb_sv_unit::transaction_i, top_tb_sv_unit::transaction_i) File: D:/modeltech64_10.4/verilog_src/uvm-1.2/src/seq/uvm_sequencer.svh Line: 289
+# ** Error: (vsim-3043) Unresolved reference to 'get_sequence_id'.
+#    Time: 0 ns  Iteration: 0  Region: /uvm_pkg::uvm_sequencer #(top_tb_sv_unit::transaction_i, top_tb_sv_unit::transaction_i) File: D:/modeltech64_10.4/verilog_src/uvm-1.2/src/seq/uvm_sequencer.svh Line: 288
+# Compiling C:/Users/afans/AppData/Local/Temp\afans@DESKTOP-UIN9PDH_dpi_189796\win64_gcc-4.5.0\exportwrapper.c
+# Loading C:/Users/afans/AppData/Local/Temp\afans@DESKTOP-UIN9PDH_dpi_189796\win64_gcc-4.5.0\vsim_auto_compile.dll
+# Loading D:/modeltech64_10.4/uvm-1.2/win64/uvm_dpi.dll
+# Error loading design
+# End time: 20:48:41 on Aug 21,2021, Elapsed time: 0:00:06
+# Errors: 6, Warnings: 1

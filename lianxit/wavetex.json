@@ -1,9 +1,11 @@
 { signal: [
-    { name: "clk",         wave: "p.....|..." },
-    { name: "Data",        wave: "x.345x|=.x", 
-        data: ["head", "body", "tail", "data"] },
-    { name: "Request",     wave: "0.1..0|1.0" },
-    {},
-    { name: "Acknowledge", wave: "1.....|01." }
+    { name: "clk",          wave: "lhlhlhlhlhlhl" },
+    { name: "cnt_n",        wave: "55.5.5.5.5.5.5" ,
+                            data:"0 1 2 0 1 2 0 1"},
+    { name: "cnt_p",        wave: "5.5.5.5.5.5.5." ,
+                            data:"0 1 2 0 1 2 0"},
+    { name:"clk_p",         wave:"l....h.....l.....h....."},
+    { name:"clk_n",         wave:"l.....h.....l.....h....."},
+    { name: "oclk",         wave: "lh..l..h..l.." }
   ]
 }

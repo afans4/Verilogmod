@@ -1,45 +1,35 @@
 `timescale 1ps/1ps
 //  Module: text
 
-class myclass;
-    rand bit [7:0] data[$];
+class A;
     string name;
-    
-    constraint c {
-        /*  solve order constraints  */
-        data.size() inside {[20:30]};
-        /*  rand variable constraints  */
-        
-    }
-    
-    function new(string name);
-        this.name = name;
+    function new();
+        this.name = "A";
     endfunction
-
-    function void print();
-        foreach (data[i]) begin
-            $display("data[%0d] = %0d",i,data);
-        end
+    virtual function void display();
+        $display("name value is %s", name);
     endfunction
 endclass
 
-module text;
-    
-    initial begin
-        myclass tr;
-        bit [7:0] a[$];
-        bit [7:0] b[$];
-        bit [7:0] min,secmin;
-        tr = new("tr1");
-        randtr: assert (tr.randomize())
-            else $error("Assertion label failed!");
-        tr.print();
-        #10
-        a = tr.data;
-        min = a.min();
-        b = a.delect()
+class B extends A;
+    function new();
+        super.new();
+    endfunction //new()
+endclass //B extends A
 
-        $stop();
+module text;
+    initial begin
+        A a0,a1;
+        B b0,b1;
+        a0 = new();
+        a0.display();
+        b0 = new();
+        b0.display();
+        b0.name = "B";
+        b1 = b0;
+        b1.display();
+        $cast(a1,b0);
+        a1.display();
+        $finish();
     end
-    
 endmodule: text

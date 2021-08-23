@@ -1,0 +1,38 @@
+# vsim -c -novopt -do "run -all;quit" work.test 
+# Start time: 19:37:25 on Aug 21,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim-64
+# //  Version 10.6c win64 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Refreshing D:/mygithup/verilogmod/onebit_parallel/test/work.test
+# Refreshing D:/mygithup/verilogmod/onebit_parallel/test/work.test_sv_unit
+# Loading sv_std.std
+# Loading work.test_sv_unit
+# Loading work.test
+# ** Warning: (vsim-3770) Failed to find user specified function 'RadarDataGen' in DPI C/C++ source files.
+#    Time: 0 ps  Iteration: 0  Region: /test_sv_unit File: transaction_i.sv
+# run -all
+# my_transaction_i: data[0] =   5 ,
+# my_transaction_i: data[1] =   7 ,
+# my_transaction_i: data[2] =  45 ,
+# my_transaction_i: data[3] =   4 ,
+# my_transaction_i: data[4] =   4 ,
+# my_transaction_i: data[5] =   1 ,
+# my_transaction_i: data[6] =   9 ,
+# my_transaction_i: data[7] =   2 ,
+# my_transaction_i: data[8] =   0 ,
+# my_transaction_i: data[9] =  23 ,
+# quit
+# End time: 19:37:27 on Aug 21,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 2
