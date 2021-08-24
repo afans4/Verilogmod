@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/mygithup/verilogmod/lianxit/test
+vdut
+!s110 1629774927
+!i10b 1
+!s100 d>l2YAi_dcQzVAf<kN@9;3
+IH<gZPEjQ4aXmb;;l]B0^61
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1629774925
+Z2 8dut.v
+Z3 Fdut.v
+L0 11
+Z4 OL;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1629774927.000000
+Z5 !s107 dut.v|
+Z6 !s90 dut.v|
+!i113 0
+Z7 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+vdut2
+!s110 1629773579
+!i10b 1
+!s100 ]B_k]MFRH@Q=hgF;bcRfL3
+IG[;[K]5W5jUm1[UTA903F0
+R1
+R0
+w1629773575
+R2
+R3
+L0 28
+R4
+r1
+!s85 0
+31
+!s108 1629773579.000000
+R5
+R6
+!i113 0
+R7
+R8
+vtb_top
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ^KX6fkbkl5P4a5<Ic?8173
+IR>k0A@D`4I:kIhgZhdfiZ0
+!s105 tb_top_sv_unit
+S1
+R0
+w1629771371
+8tb_top.sv
+Ftb_top.sv
+L0 12
+R4
+!s108 1629771374.000000
+!s107 tb_top.sv|
+!s90 tb_top.sv|
+!i113 0
+R7
+R8

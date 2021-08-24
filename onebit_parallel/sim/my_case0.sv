@@ -4,7 +4,7 @@
 class case0_sequence extends uvm_sequence #(transaction_i);
     `uvm_object_utils(case0_sequence)
 
-    transaction_i trans;
+    transaction_i tr_i;
 
     function new(string name = "case0");
         super.new(name);
@@ -20,7 +20,8 @@ task case0_sequence::body();
     end
     repeat (2) begin
         `uvm_info(get_name(), "seq send", UVM_NONE)
-        `uvm_do(trans)
+        
+        `uvm_do(tr_i)
     end 
     #100;
     if(starting_phase != null) begin

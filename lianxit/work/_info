@@ -9,49 +9,25 @@ z2
 cModel Technology
 Z0 dD:/mygithup/verilogmod/lianxit
 vtext
-Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-DXx4 work 12 text_sv_unit 0 22 `67?TOAXO[_;<2iHS^F8K1
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 31
 !i10b 1
-!s100 ei:c@a?;mP<L1WWB@<;2B2
-Iae9>0]X?ND8aOzV2bo;P?3
+!s100 jLU>ZQ3JKS8@QCoJQH^]62
+IkDA`W`mCcP<Ki5^A=Z16_3
 !s105 text_sv_unit
 S1
 R0
-Z2 w1629608346
-Z3 8text.sv
-Z4 Ftext.sv
-L0 20
-Z5 OL;L;10.6c;65
-Z6 !s108 1629608607.000000
-Z7 !s107 text.sv|
-Z8 !s90 text.sv|
+w1629704588
+8text.sv
+Ftext.sv
+L0 3
+OL;L;10.6c;65
+!s108 1629704590.000000
+!s107 text.sv|
+!s90 text.sv|
 !i113 0
-Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z10 tCvgOpt 0
-Xtext_sv_unit
-R1
-V`67?TOAXO[_;<2iHS^F8K1
-r1
-!s85 0
-31
-!i10b 1
-!s100 R0LWX@kCc^@Wif=^ZM9H20
-I`67?TOAXO[_;<2iHS^F8K1
-!i103 1
-S1
-R0
-R2
-R3
-R4
-L0 4
-R5
-R6
-R7
-R8
-!i113 0
-R9
-R10
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0
