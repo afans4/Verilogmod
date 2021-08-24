@@ -1,5 +1,5 @@
-UVM_DPI_HOME = D:/modeltech64_10.4/uvm-1.2/win64
-UVM_HOME     = D:/modeltech64_10.4/verilog_src/uvm-1.2
+UVM_DPI_HOME = D:/modeltech64_10.4/uvm-1.1d/win64
+UVM_HOME     = D:/modeltech64_10.4/verilog_src/uvm-1.1d
 
 sim_libb = -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF 
 
@@ -16,8 +16,6 @@ sim:
 	vlog +incdir+$(UVM_HOME)/src \
 	$(UVM_HOME)/src/uvm_pkg.sv \
 	./../C/RadarDataGen.c \
-	./../dut/*.v \
-	./../dut/*.sv \
 	./../sim/top_tb.sv 
 
 run:
@@ -29,7 +27,7 @@ run_uvm:
 	-do "run -all;exit" \
 	-novopt -c -sv_lib \
 	$(UVM_DPI_HOME)/uvm_dpi \
-	+UVM_TESTNAME=my_case0 \
+	+UVM_TESTNAME=my_case1 \
 	-L work \
 	work.top_tb
 

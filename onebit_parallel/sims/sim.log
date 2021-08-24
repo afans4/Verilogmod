@@ -1,5 +1,5 @@
 # vsim -l sim.log -voptargs="+acc" -t ns -do "run -all;exit" -novopt -c -sv_lib D:/modeltech64_10.4/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=my_case1" -L work work.top_tb 
-# Start time: 16:03:08 on Aug 23,2021
+# Start time: 20:57:04 on Aug 24,2021
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # //  Questa Sim-64
 # //  Version 10.6c win64 Jul 26 2017
@@ -35,7 +35,7 @@
 # Loading work.mf_1bit_512order_Im
 # Refreshing D:/mygithup/verilogmod/onebit_parallel/sims/work.mf_table_2
 # Loading work.mf_table_2
-# Loading C:/Users/afans/AppData/Local/Temp\afans@DESKTOP-UIN9PDH_dpi_260808\win64_gcc-4.5.0\vsim_auto_compile.dll
+# Loading C:/Users/afans/AppData/Local/Temp\afans@DESKTOP-UIN9PDH_dpi_105980\win64_gcc-4.5.0\vsim_auto_compile.dll
 # Loading D:/modeltech64_10.4/uvm-1.1d/win64/uvm_dpi.dll
 # run -all
 # ----------------------------------------------------------------
@@ -101,5 +101,5 @@
 # [my_scoreboard]     2
 # ** Note: $finish    : D:/modeltech64_10.4/verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
 #    Time: 420400 ns  Iteration: 105  Instance: /top_tb
-# End time: 16:03:16 on Aug 23,2021, Elapsed time: 0:00:08
+# End time: 20:57:12 on Aug 24,2021, Elapsed time: 0:00:08
 # Errors: 0, Warnings: 1
