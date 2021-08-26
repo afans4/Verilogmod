@@ -11,7 +11,7 @@ class case0_sequence extends uvm_sequence #(my_transaction_i);
       `uvm_info(get_name(), "sequence begin", UVM_NONE)
       if(starting_phase != null) 
          starting_phase.raise_objection(this);
-      repeat (10) begin
+      repeat (3) begin
          `uvm_info(get_name(), "seq send", UVM_NONE)
          `uvm_do(m_trans) //创建，随机，送给sequercer
       end

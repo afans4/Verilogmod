@@ -16,7 +16,7 @@ sim:
 	vlog +incdir+$(UVM_HOME)/src \
 	$(UVM_HOME)/src/uvm_pkg.sv \
 	./../C/RadarDataGen.c \
-	./../sim/top_tb.sv 
+	./../sims/top_tb.sv 
 
 run:
 	vsim -l sim.log -c -novopt -sv_lib work work.top_tb
@@ -27,7 +27,7 @@ run_uvm:
 	-do "run -all;exit" \
 	-novopt -c -sv_lib \
 	$(UVM_DPI_HOME)/uvm_dpi \
-	+UVM_TESTNAME=my_case1 \
+	+UVM_TESTNAME=my_case0 \
 	-L work \
 	work.top_tb
 

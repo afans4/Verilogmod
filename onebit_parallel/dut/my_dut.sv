@@ -1,13 +1,4 @@
-/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ *\
-Filename 	 	 my_dut.v
-Author 			 ﹕Pan Tianlun
-Description 	 ﹕512-orders Match filer x 4 and integate
-Called by 		 ﹕Core module
-Create			 ﹕2020-6-26
-Organization 	 ﹕ MDSP-LAB
-vision：
-This vision uses 512-order (parameters num = 256) x 4
-\* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
  module my_dut(
  		input	clk,
 		input	rst_n,

@@ -1,13 +1,4 @@
-/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ *\
-Filename 	 	 ：mf_1bit_512order_Im.v
-Author 			 ﹕Afans
-Description 	 ﹕512-orders Match filer	
-Called by 		 ﹕Core module
-Create			 ﹕2020-6-26
-Organization 	 ﹕ MDSP-LAB
-vision：
-This vision uses 512-order (parameters num = 256)
-\* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
 
 module	mf_1bit_512order_Im
 	#(  parameter	W1 = 1,  //bit widrh  

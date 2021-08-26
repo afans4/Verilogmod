@@ -38,14 +38,6 @@ class transaction_i extends uvm_sequence_item;
             Im_data[i-512] = (data[i]>=0) ? 1'b0 : 1'b1;
         end
     endfunction    
-
-    function void my_print();
-        for(int i = 0; i < Re_data.size; i++) begin
-        $display("my_transaction_i: Re_data[%0d] = %x , Im_data[%0d] = %x",
-                    i, Re_data[i], i, Im_data[i]);		 
-        
-        end
-       endfunction
 endclass: transaction_i
 
 `endif 

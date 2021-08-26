@@ -1,13 +1,4 @@
-/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ *\
-Filename 	 	 mf_1bit_512order_Re.v
-Author 			 ﹕Pan Tianlun
-Description 	 ﹕512-orders Match filer
-Called by 		 ﹕Core module
-Create			 ﹕2020-6-26
-Organization 	 ﹕ MDSP-LAB
-vision：test
-This vision uses 512-order (parameters num = 256)
-\* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
 
 module	mf_1bit_512order_Re
 		#(  parameter	W1 = 1,  //bit widrh
