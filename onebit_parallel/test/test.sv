@@ -9,15 +9,19 @@
 //
 //------------------------------------------------------------------
 `timescale 1ps/1ps
-`include "transaction_i.sv"
+
 module test;
+    reg clk;
     initial begin
-        transaction_i tr;
-        tr = new();
-        assert (tr.randomize())
-        else $error(0,"transaction_i randomize failed");
+        clk = 0;
+        #100;
+        $stop();
+    end
+    always @(clk) begin
+        #5clk <= ~clk;
+    end
 
-        tr.my_print();
-
+    initial begin
+        $monitor($time,":clk = %0b",clk);
     end
 endmodule//test

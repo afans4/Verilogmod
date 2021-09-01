@@ -8,7 +8,7 @@ class my_transaction_i extends uvm_sequence_item;
 	bit Re_data[];
 	bit Im_data[];
     rand int range;
-	//real data[];
+
  	constraint range_cons{
 				range > 0;
 				range < 50;

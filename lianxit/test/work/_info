@@ -9,67 +9,69 @@ z2
 cModel Technology
 Z0 dD:/mygithup/verilogmod/lianxit/test
 vdut
-!s110 1629774927
-!i10b 1
-!s100 d>l2YAi_dcQzVAf<kN@9;3
-IH<gZPEjQ4aXmb;;l]B0^61
 Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 NYa]Hm9@VhUHDF5HFO_S<1
+IFinMC14B_W2M_d>WOKR5?1
 R0
-w1629774925
-Z2 8dut.v
-Z3 Fdut.v
+w1629982808
+8dut.v
+Fdut.v
 L0 11
-Z4 OL;L;10.6c;65
-r1
-!s85 0
-31
-!s108 1629774927.000000
-Z5 !s107 dut.v|
-Z6 !s90 dut.v|
+Z2 OL;L;10.6c;65
+!s108 1629982872.000000
+!s107 dut.v|
+!s90 dut.v|
 !i113 0
-Z7 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z8 tCvgOpt 0
-vdut2
-!s110 1629773579
-!i10b 1
-!s100 ]B_k]MFRH@Q=hgF;bcRfL3
-IG[;[K]5W5jUm1[UTA903F0
-R1
-R0
-w1629773575
-R2
-R3
-L0 28
-R4
-r1
-!s85 0
-31
-!s108 1629773579.000000
-R5
-R6
-!i113 0
-R7
-R8
-vtb_top
-DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z3 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z4 tCvgOpt 0
+vdut_tb
+Z5 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+DXx4 work 14 tb_top_sv_unit 0 22 Q1``4bA8QV^^P0ZVgNU=63
 R1
 r1
 !s85 0
 31
 !i10b 1
-!s100 ^KX6fkbkl5P4a5<Ic?8173
-IR>k0A@D`4I:kIhgZhdfiZ0
+!s100 30i=1S`Le0200Wn4zeZVJ3
+I:=l]4dm^DTRDhYPO95PZ23
 !s105 tb_top_sv_unit
 S1
 R0
-w1629771371
-8tb_top.sv
-Ftb_top.sv
-L0 12
-R4
-!s108 1629771374.000000
-!s107 tb_top.sv|
-!s90 tb_top.sv|
+Z6 w1629984049
+Z7 8tb_top.sv
+Z8 Ftb_top.sv
+L0 26
+R2
+Z9 !s108 1629984054.000000
+Z10 !s107 tb_top.sv|
+Z11 !s90 tb_top.sv|
 !i113 0
+R3
+R4
+Xtb_top_sv_unit
+R5
+VQ1``4bA8QV^^P0ZVgNU=63
+r1
+!s85 0
+31
+!i10b 1
+!s100 jSSTkad[`?S4=UV4@K<6d2
+IQ1``4bA8QV^^P0ZVgNU=63
+!i103 1
+S1
+R0
+R6
 R7
 R8
+L0 13
+R2
+R9
+R10
+R11
+!i113 0
+R3
+R4

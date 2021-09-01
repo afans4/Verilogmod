@@ -1,5 +1,5 @@
-# vsim -c -novopt -do "run -all;exit" work.test 
-# Start time: 20:59:24 on Aug 27,2021
+# vsim -c -novopt -do "run -all;exit" -l sim.log work.test 
+# Start time: 10:26:39 on Aug 31,2021
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # //  Questa Sim-64
 # //  Version 10.6c win64 Jul 26 2017
@@ -15,34 +15,33 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# Refreshing D:/mygithup/verilogmod/onebit_parallel/test/work.test
 # Loading sv_std.std
 # Loading work.test
 # run -all
-#                    0:clk = 0
-#                    5:clk = 1
-#                   10:clk = 0
-#                   15:clk = 1
-#                   20:clk = 0
-#                   25:clk = 1
-#                   30:clk = 0
-#                   35:clk = 1
-#                   40:clk = 0
-#                   45:clk = 1
-#                   50:clk = 0
-#                   55:clk = 1
-#                   60:clk = 0
-#                   65:clk = 1
-#                   70:clk = 0
-#                   75:clk = 1
-#                   80:clk = 0
-#                   85:clk = 1
-#                   90:clk = 0
-#                   95:clk = 1
+#                    0:CLK = 0
+#                    5:CLK = 1
+#                   10:CLK = 0
+#                   15:CLK = 1
+#                   20:CLK = 0
+#                   25:CLK = 1
+#                   30:CLK = 0
+#                   35:CLK = 1
+#                   40:CLK = 0
+#                   45:CLK = 1
+#                   50:CLK = 0
+#                   55:CLK = 1
+#                   60:CLK = 0
+#                   65:CLK = 1
+#                   70:CLK = 0
+#                   75:CLK = 1
+#                   80:CLK = 0
+#                   85:CLK = 1
+#                   90:CLK = 0
+#                   95:CLK = 1
 # ** Note: $stop    : test.sv(18)
 #    Time: 100 ps  Iteration: 0  Instance: /test
 # Break in Module test at test.sv line 18
 # Stopped at test.sv line 18
 # exit
-# End time: 20:59:25 on Aug 27,2021, Elapsed time: 0:00:01
+# End time: 10:26:40 on Aug 31,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1

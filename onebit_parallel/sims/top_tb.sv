@@ -31,7 +31,7 @@ wire valid;
 my_if Mif(clk,rst_n);
 
 
- my_dut  my_DUT(.clk(clk),
+ mf_top  my_DUT(.clk(clk),
 				.rst_n(rst_n),
 				.en(Mif.en),
 				.x_re(Mif.x_re),
