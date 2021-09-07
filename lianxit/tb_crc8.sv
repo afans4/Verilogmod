@@ -18,6 +18,10 @@ class data_32;
         foreach(data[i])
         $display("[%s]%0t %s data[%0d] = %0d", prefix, $realtime, name, i, data[i]);
     endfunction
+    //G(x) = x8+x2+x1+1
+    function bit crc8()
+        
+    endfunction 
 endclass
 module tb_crc8;
     //例化

@@ -8,45 +8,74 @@
 //Funciton:
 //
 //------------------------------------------------------------------
-module dut(
-    input clk,
-    input rstn,
-    input data_en,
-    input signed [31:0] data_i,
-    input signed [31:0] data_q,
-    output [64:0] absma,
-    output [8:0] index);
 
-    parameter N = 128;
-    reg [64:0] absma_r;
-    reg [8:0] index_r,ind_max_r;
+module crc4 (
+    input  clk,
+    input  rst_n,
+    input  data,
+    input  data_valid,
+    input  crc_start, //CRC开始信号，持续一个clk
+    output wire crc_out,  //crc 串行输出
+    output reg crc_valid //CRC valid
+);
 
-    wire signed [64:0] abscu;
-    wire updata;
-
-    assign abscu = data_i*data_i+data_q*data_q;
-    assign updata = abscu > absma_r;
-    always @(posedge clk or negedge rstn) begin
-        if (!rstn) begin
-            absma_r <= 0;
+    //G(D)=D4+D3+1
+    parameter [4:0] G = 5'b11001;
+    reg [3:0] shift_r;
+    wire shift_i;
+    reg [1:0] cnt;
+    reg flag;
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            cnt <= 0;
+            flag <= 0;
         end
-        else if (data_en) begin
-            absma_r <= (updata) ? abscu : absma_r;
+        else if (crc_start) begin
+            flag <= 1;
+            cnt <= 0;
+        end
+        else if(!data_valid && flag)begin
+            cnt <= (cnt == 3) ? cnt : cnt +1 ;
+        end  
+    end
+
+    assign shift_i = data_valid ? data : 0;
+
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n || crc_start) begin
+            shift_r <= 4'b0000;
+        end else if (data_valid || cnt < 3) begin
+            shift_r[0] <= shift_i^shift_r[3]; 
+            shift_r[1] <= shift_r[0];
+            shift_r[2] <= shift_r[1];
+            shift_r[3] <= shift_r[2]^shift_r[3];
         end
     end
 
-    always @(posedge clk or negedge rstn) begin
-        if (!rstn) begin
-            index_r <= 0;
-            ind_max_r <= 0;
-        end else if (data_en) begin
-            index_r <= index_r + 1;
-            ind_max_r <= updata ? index_r : ind_max_r;
+    reg [2:0] cnt_o;
+    reg flag_o;
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            cnt_o <= 3'd0;
+        end else if (cnt == 3) begin
+            cnt_o <= 3'd0;
+        end else begin
+            cnt_o <= (cnt_o == 3) ? cnt_o : cnt_o+1;
         end
     end
 
-    assign absma = absma_r;
-    assign index = ind_max_r;
+    assign crc_out = shift_r[cnt_o];
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            crc_valid <= 0;
+        end else begin
+            crc_valid <= 
+        end
+    end
 
-endmodule//dut
+
+
+    
+
+endmodule //crc4
 
