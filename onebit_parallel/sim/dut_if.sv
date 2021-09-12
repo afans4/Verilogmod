@@ -16,6 +16,10 @@ interface dut_if(
 
     //clocking cb @(posedge clk);
         
+    property data_in;
+        @(posedge clk) test
+    endproperty
     
+
 endinterface: dut_if
 `endif 

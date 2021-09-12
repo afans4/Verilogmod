@@ -15,7 +15,7 @@ module	mf_1bit_512
         parameter	L = 512, //
         parameter	L2 = 256,
         parameter	Dy = 8,
-        parameter  integer  Filpara [0:255]
+        parameter  integer  Filpara [0:255] = 0
     )( 	input		                clk,
         input		                rst_n,
         input	        [W1-1:0]	x_in,
@@ -32,6 +32,7 @@ reg	signed [W3-1:0] adder [0:L2-2];
 reg 	[Dy-1:0] en_delay;
 
 // input 1-bit data reg
+// data shift reg
 always@(posedge clk or negedge rst_n)begin: ctr_x_reg
     integer k;
     if(!rst_n)begin
