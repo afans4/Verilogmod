@@ -37,7 +37,7 @@ module top_tb;
 
     dut_if mif(clk,rst_n);
 
-    my_dut  my_DUT( .clk(clk),
+    mf_top  my_DUT( .clk(clk),
                     .rst_n(rst_n),
                     .en(mif.en),
                     .x_re(mif.x_re),
@@ -75,6 +75,11 @@ module top_tb;
 		uvm_config_db#(virtual dut_if)::set(null, "uvm_test_top.env.i_agt.mon_i", "vif", mif);
 		//输出接口监控
 		uvm_config_db#(virtual dut_if)::set(null, "uvm_test_top.env.o_agt.mon_o", "vif", mif);
+    end
+
+    initial begin
+        $dumpfile("wave.vcd")
+        $dumpvars(0,top_tp);
     end
 
 endmodule//top_tb

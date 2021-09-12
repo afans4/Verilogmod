@@ -12,8 +12,8 @@
 module tb_clk_div3;
     logic iclk,rstn,oclk;
 
-    clk_div3_nocnt dut(
-        .clk   (iclk),
+    clk_div3s dut(
+        .iclk   (iclk),
         .rstn   (rstn),
         .oclk   (oclk)
         );
@@ -30,5 +30,10 @@ module tb_clk_div3;
 
         #500
         $stop();
+    end
+
+    initial begin
+        $dumpfile("tb.vcd");
+        $dumpvars(0,tb_clk_div3);   
     end
 endmodule//tb_clk_div3

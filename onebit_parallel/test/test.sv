@@ -17,9 +17,7 @@ module test;
         #100;
         $stop();
     end
-    always @(clk) begin
-        #5clk <= ~clk;
-    end
+    
 
     initial begin
         $monitor($time,":clk = %0b",clk);
