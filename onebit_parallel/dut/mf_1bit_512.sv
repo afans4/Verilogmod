@@ -15,7 +15,7 @@ module	mf_1bit_512
         parameter	L = 512, //
         parameter	L2 = 256,
         parameter	Dy = 8,
-        parameter  integer  Filpara [0:255] = 0
+        parameter  integer  Filpara [0:255]
     )( 	input		                clk,
         input		                rst_n,
         input	        [W1-1:0]	x_in,

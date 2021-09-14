@@ -19,7 +19,13 @@ sim:
 	./../sims/top_tb.sv 
 
 run:
-	vsim -l sim.log -c -novopt -sv_lib work work.top_tb
+	vsim -l sim.log \
+	-voptargs=+acc -t ns \
+	-novopt -sv_lib \
+	$(UVM_DPI_HOME)/uvm_dpi \
+	+UVM_TESTNAME=my_case0 \
+	-L work \
+	work.top_tb
 
 run_uvm:
 	vsim -l sim.log \
