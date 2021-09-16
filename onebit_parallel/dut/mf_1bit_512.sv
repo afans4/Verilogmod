@@ -39,6 +39,7 @@ always@(posedge clk or negedge rst_n)begin: ctr_x_reg
         for(k=0;k<L; k=k+1)	x_reg[k] <= 2'b00;
     end
     else begin
+        //输入数据延时1个clk存入寄存器
         x_reg[0] <= {en,x_in};
         for(k=0;k<L-1; k=k+1)	x_reg[k+1] <= x_reg[k];
         end
@@ -80,7 +81,7 @@ always@(posedge clk or negedge rst_n)begin: ctr_Adder
 end
     assign y_out = adder[254];
 
-
+    //延时8clk，等待加法树计算结束
     always@(posedge clk or negedge rst_n) begin :en_o_delay
         if(!rst_n) begin
             en_delay <= 0;

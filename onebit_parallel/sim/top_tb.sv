@@ -78,7 +78,7 @@ module top_tb;
     end
 
     initial begin
-        $dumpfile("wave.vcd")
+        $dumpfile("wave.vcd");
         $dumpvars(0,top_tp);
     end
 

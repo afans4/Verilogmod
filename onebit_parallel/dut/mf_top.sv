@@ -6,7 +6,7 @@
 //Revise  : 2021-
 //Editor  : Vscode,tab size (4)
 //Funciton:
-//
+//512点1bit复数滤波器
 //------------------------------------------------------------------
 module mf_top(
     input	clk,

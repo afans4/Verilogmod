@@ -70,5 +70,18 @@ my_if Mif(clk,rst_n);
 		//输出接口监控
 		uvm_config_db#(virtual my_if)::set(null, "uvm_test_top.env.o_agt.mon_o", "vif", Mif);
 	end	
+
+	initial begin
+        $dumpfile("wave.vcd");
+        $dumpvars(0,top_tb.Mif);
+    end
+	initial begin
+        $dumpfile("mf_top.vcd");
+        $dumpvars(1,top_tb.my_DUT);
+    end
+	initial begin
+        $dumpfile("mfbit.vcd");
+        $dumpvars(1,top_tb.my_DUT.MFim_Xre);
+    end
 	
 endmodule
